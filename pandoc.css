@@ -8,15 +8,20 @@ body > table {
 
 body > h1 {
 	font-size: 1.7em;
+	text-align: center;
 }
 
 body {
-	font-family: Times, Amiri, sans-serif;
-	font-size: 110%;
+	font-family: Times, serif;
 	line-height: 1.7;
 	padding: 1em;
 	margin: auto;
-	max-width: 55em;
+	max-width: 50em;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
 }
 
 p {
