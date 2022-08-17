@@ -1,8 +1,0 @@
-assets/Primary_Human_Languages_Improved_Version.png,https://commons.wikimedia.org/wiki/File:Primary_Human_Languages_Improved_Version.png
-assets/Chronological_dispersal_of_Austronesian_people_across_the_Pacific.png,https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg
-assets/transformer.png,https://theaisummer.com/transformer/
-assets/t1irww1mxp051.png,https://www.reddit.com/r/etymologymaps/comments/gpq9is/spread_of_the_protoindoeuropean_word_for_brother/
-assets/IMG_5004.jpg,https://company.books-yagi.co.jp/archives/news/1285
-assets/xhm6ihn84am11.jpg,https://www.reddit.com/r/MapPorn/comments/9fweib/map_showing_the_decline_of_native_irish_speakers/
-assets/games-1.png,https://alconost.com/en/localization/games
-assets/gif-maker-25.png,https://www.milestoneloc.com/translation-vs-transliteration-vs-transcreation/
