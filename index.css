@@ -8,8 +8,9 @@ h1 {
   font-size: 1.7em;
 }
 
-h2::before {
-  content: "# ";
+h2 {
+  font-size: 1.4em;
+  margin: 0.7em 0;
 }
 
 a {
@@ -70,8 +71,7 @@ footer a {
   display: none;
 }
 
-.main,
-.icon-container {
+.main {
   font-family: "Shadows Into Light Two", cursive;
   font-size: 103%;
   line-height: 1.7;
