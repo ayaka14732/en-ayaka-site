@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
 body {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 }
 
 h1 {
   font-size: 1.7em;
+}
+
+h2::before {
+  content: "# ";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -16,6 +25,19 @@ img {
 em {
   font-style: normal;
   font-weight: bold;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: my-counter;
+}
+
+ol li::before {
+  content: counter(my-counter) ".";
+  counter-increment: my-counter;
+  display: inline-block;
+  width: 1em;
 }
 
 footer {
@@ -32,22 +54,6 @@ footer a {
   color: inherit;
 }
 
-.main {
-  font-family: "Shadows Into Light Two", cursive;
-  font-size: 103%;
-  line-height: 1.7;
-  margin-top: 1.5rem;
-  letter-spacing: 1.3px;
-  word-spacing: -4.3px;
-}
-
-footer, .main, .icon-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50rem;
-  padding: 0 1rem;
-}
-
 .block {
   display: block;
 }
@@ -60,21 +66,57 @@ footer, .main, .icon-container {
   border: 1px solid black;
 }
 
-.icon {
-  margin: 0 0.5em;
-}
-
-.icon > img {
-  filter: grayscale(1);
-  width: 2.5em;
-}
-
 .hidden {
   display: none;
 }
 
+.main,
+.icon-container {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 103%;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  letter-spacing: 1.5px;
+  word-spacing: -4.3px;
+}
+
+footer,
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+.main h1 {
+  letter-spacing: 2.4px;
+}
+
+.main h2 {
+  letter-spacing: 2.2px;
+}
+
 .icon-container {
   display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 0 1em;
+}
+
+.icon-container > figure {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.icon-container > figure > a > img {
+  filter: grayscale(1);
+  vertical-align: middle;
+  width: 1.4em;
+}
+
+.icon-container > figure > a > figcaption {
+  display: inline;
+  vertical-align: middle;
 }
 
 /* hero image */
@@ -108,5 +150,21 @@ footer, .main, .icon-container {
   .hero img {
     margin-top: -8%;
     margin-bottom: -13.5%;
+  }
+}
+
+/* h2 sharp symbol */
+
+.main h2::before {
+  content: "#";
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 4px;
+  transform: scale(1.5) translateY(1px);
+}
+
+@media (min-width: 1200px) {
+  .main h2::before {
+    margin-left: -22px;
   }
 }
