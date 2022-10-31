@@ -3,5 +3,3 @@ Disallow: /assets/
 
 User-agent: Googlebot-Image
 Disallow: /
-
-Sitemap: https://lisa.shn.hk/sitemap.txt
