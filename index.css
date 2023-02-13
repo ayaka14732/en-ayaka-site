@@ -103,5 +103,9 @@ html.dark img {
 }
 
 html.dark .icon-container > figure > a > img {
-  filter: invert(1);
+  filter: invert(1) grayscale(1);
+}
+
+html.dark .icon-container > figure > a > img.icon-rev {
+  filter: grayscale(1);
 }
