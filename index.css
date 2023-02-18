@@ -143,6 +143,11 @@ main {
   display: none;
 }
 
+.content > section ul a,
+.content > section ol a {
+  text-decoration: none;
+}
+
 /* footer */
 
 footer {
@@ -153,10 +158,6 @@ footer {
   font-size: 0.9rem;
 }
 
-footer a {
-  text-decoration: none;
-}
-
 /* generic */
 
 .hidden {
@@ -165,6 +166,7 @@ footer a {
 
 a {
   color: inherit;
+  text-decoration-color: rgb(108 103 95);
   text-decoration-thickness: 1px;
   text-underline-offset: 6px;
 }
