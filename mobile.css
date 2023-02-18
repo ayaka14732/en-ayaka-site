@@ -1,108 +1,51 @@
 html {
   background-color: #181a1b;
-  min-height: 100vh;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   color: rgb(183, 177, 167);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.95rem;
   line-height: 1.7;
   margin: 0;
-  min-height: 100vh;
+  counter-reset: my-counter;
 }
 
 /* header */
 
 header {
   border-bottom: 1px solid rgb(52, 56, 58);
+  padding: 0.25rem 1.5rem;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  max-width: 850px;
-  padding: 1rem 4rem;
-}
-
-nav > h1 {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-nav > h1:hover {
-  cursor: pointer;
-}
+/* nav */
 
 nav > ul {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
-  margin-left: 2.5rem;
-  padding-left: 0;
-}
-
-nav > ul > li {
-  position: relative;
-}
-
-nav > ul > li:hover {
-  color: rgb(171, 163, 152);
-  cursor: pointer;
-}
-
-nav > ul > li::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 1px;
-  background: rgb(171, 163, 152);
-  transition: all 0.2s ease-in-out;
-}
-
-nav > ul > li:hover::after,
-nav > ul > li.active::after {
-  width: 100%;
+  display: none;
 }
 
 /* main */
 
 main {
-  flex-grow: 1;
-  display: flex;
+  padding: 1rem 1.5rem;
 }
 
 /* sidebar */
-
-.sidebar {
-  padding: 2rem 2rem 1.5rem 4rem;
-  width: 15rem;
-  flex-shrink: 0;
-}
 
 .sidebar > .avatar {
   display: block;
   width: 195px;
   border: 1px solid rgb(52, 56, 58);
   border-radius: 50%;
-  margin: 0 auto;
 }
 
 .sidebar > h2 {
-  font-size: 1.2rem;
+  display: none;
 }
 
 .sidebar > ul {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   padding-left: 0;
   list-style-type: none;
   line-height: 1.9;
@@ -134,13 +77,19 @@ main {
 
 /* content */
 
-.content {
-  max-width: 850px;
-  padding: 1rem 4rem 1.5rem 2rem;
+.content > section.hidden {
+  display: inherit;
 }
 
 .content > section > h2 {
-  display: none;
+  font-size: 1.375rem;
+}
+
+.content > section > h2::before {
+  content: counter(my-counter) ". ";
+  counter-increment: my-counter;
+  /* display: inline-block;
+  width: 1em; */
 }
 
 /* footer */
@@ -149,7 +98,7 @@ footer {
   color: rgb(172, 165, 154);
   background-color: rgb(31, 34, 35);
   border-top: 1px solid rgb(66, 71, 74);
-  padding: 1rem 4rem;
+  padding: 1rem 1.5rem;
   font-size: 0.9rem;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB" dir="ltr" class="dark">
+<html lang="en-GB" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -8,106 +8,141 @@
   <title>Ayaka’s Website</title>
   <meta name="googlebot" content="noimageindex" />
   <meta property="og:image" content="https://avatars2.githubusercontent.com/u/68557794?s=400&u=343da7bebff676129e87341def71121ebffc4c9c&v=4" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 930px)" href="index.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 929.99px)" href="mobile.css" />
   <script>
-    window.addEventListener('DOMContentLoaded', function() { var _h='6E;&#x2E;&#x68;&#x6B;';var _a='4;&#x30;&#x2E;&#x73;&#x68;&#x';var _n='&#x61;&#x79;&#x61;&#x6B;&#x61;&#x40;&#x30;&#x78;&#x3';var _e=_n+_a+_h;_a=document.createElement('span');_a.innerHTML=_e;document.getElementById('gategdinzijau').href='m'+'a'+'ilto'+':'+_a.innerText; /* Console log */ console.log('Welcome!'); });
+    window.addEventListener('DOMContentLoaded', function() { var _h='6E;&#x2E;&#x68;&#x6B;';var _a='4;&#x30;&#x2E;&#x73;&#x68;&#x';var _n='&#x61;&#x79;&#x61;&#x6B;&#x61;&#x40;&#x30;&#x78;&#x3';var _e=_n+_a+_h;_a=document.createElement('span');_a.innerHTML=_e;var _b=_a.innerText;var _z=document.getElementById('gategdinzijau');_z.href='m'+'a'+'ilto'+':'+_b;_z.querySelector('figcaption').innerText=_b; /* Console log */ console.log('Welcome!'); });
   </script>
+  <script src="index.js"></script>
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5999a450310c4218a9376aef4659120a"}'></script>
   <!-- End Cloudflare Web Analytics -->
 </head>
 <body>
-<div class="main">
-  <h1 class="center">Ayaka’s Website</h1>
+  <header>
+    <nav>
+      <h1 onclick="handleToggle('Introduction')">Ayaka’s Website</h1>
+      <ul>
+        <li class="active" onclick="handleToggle('Introduction')">Introduction</li>
+        <li onclick="handleToggle('NLP')">NLP</li>
+        <li onclick="handleToggle('Linguistics')">Linguistics</li>
+        <li onclick="handleToggle('Mathematics')">Mathematics</li>
+        <li onclick="handleToggle('Miscellaneous')">Miscellaneous</li>
+        <li onclick="handleToggle('Posts')">Posts</li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="icon-container">
-    <figure><a href="https://linktr.ee/ayaka14732">
-      <img class="icon-rev" src="assets/linktree.png" lang="en-HK">
-      <figcaption>Linktree</figcaption>
-    </a></figure>
-    <figure><a href="https://example.org/" id="gategdinzijau">
-      <img src="assets/email.png" lang="en-HK">
-      <figcaption>E-Mail</figcaption>
-    </a></figure>
-  </div>
+  <main>
+    <div class="sidebar">
+      <img class="avatar" src="assets/b4f2.jpeg" />
+      <h2>Ayaka</h2>
+      <ul>
+        <li id="clock-wrapper" class="hidden">
+          <figure>
+            <img src="assets/clock.png">
+            <figcaption>
+              <span id="clock" title="The Nya Calendar">0/0/0/0 00:00</span> (ACST)
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="https://linktr.ee/ayaka14732">
+              <img class="icon-rev" src="assets/linktree.png">
+              <figcaption>https://linktr.ee/ayaka14732</figcaption>
+            </a>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="https://example.org/" id="gategdinzijau">
+              <img src="assets/email.png">
+              <figcaption>https://example.org/</figcaption>
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </div>
 
-  <h2>Introduction</h2>
+    <div class="content">
+      <section id="Introduction">
+        <h2>Introduction</h2>
 
-  <p>For a comprehensive overview of my open-source projects, please visit my <a href="https://github.com/ayaka14732">GitHub</a>.</p>
+        <p>For a comprehensive overview of my open-source projects, please visit my <a href="https://github.com/ayaka14732">GitHub</a>.</p>
 
-  <p>I am Ayaka, a 23-year-old computer science, historical linguistics, and mathematics researcher.</p>
+        <p>I am Ayaka, a 23-year-old computer science, historical linguistics, and mathematics researcher.</p>
+      </section>
 
-  <h2>Natural Language Processing</h2>
+      <section id="NLP" class="hidden">
+        <h2>NLP</h2>
 
-  <p>I am driven by my lifelong goal of designing powerful artificial intelligence that can understand and process a diverse range of languages, both widely spoken and under-resourced. My strong background in computer science has allowed me to gain a thorough understanding of the architecture of state-of-the-art NLP models.</p>
+        <p>I am driven by my lifelong goal of designing powerful artificial intelligence that can understand and process a diverse range of languages, both widely spoken and under-resourced. My strong background in computer science has allowed me to gain a thorough understanding of the architecture of state-of-the-art NLP models.</p>
+      
+        <p>I have made significant contributions to NLP, including the development of TransCan, an English-Cantonese machine translation model that outperforms state-of-the-art commercial products by 11.8 BLEU. I implemented the BART model from scratch using JAX, establishing a versatile codebase for future deep learning model architecture research. Moreover, I created the LIHKG Cantonese Dataset through a scraper that bypassed all 13 layers of Cloudflare’s protection, resulting in a corpus of 172 million unique sentences.</p>
+      
+        <p>Recent advancements in NLP technology have been particularly exciting, including the release of ChatGPT, a highly advanced text generation model with strong reasoning skills. As one of the first users of ChatGPT Plus, I am thrilled to be at the forefront of this cutting-edge journey.</p>
+      
+        <p>Nevertheless, even the best NLP models today are unable to process low-resource languages, despite the fact that humans are capable of adapting to these languages through appropriate methods. My long-term objective is to find a transfer learning method that enables AI to pick up low-resource languages without human supervision, leveraging the vast amounts of data available on the Internet.</p>
+      </section>
 
-  <p>I have made significant contributions to NLP, including the development of TransCan, an English-Cantonese machine translation model that outperforms state-of-the-art commercial products by 11.8 BLEU. I implemented the BART model from scratch using JAX, establishing a versatile codebase for future deep learning model architecture research. Moreover, I created the LIHKG Cantonese Dataset through a scraper that bypassed all 13 layers of Cloudflare’s protection, resulting in a corpus of 172 million unique sentences.</p>
+      <section id="Linguistics" class="hidden">
+        <h2>Linguistics</h2>
 
-  <p>Recent advancements in NLP technology have been particularly exciting, including the release of ChatGPT, a highly advanced text generation model with strong reasoning skills. As one of the first users of ChatGPT Plus, I am thrilled to be at the forefront of this cutting-edge journey.</p>
+        <p>As a historian of languages, I am deeply interested in exploring the evolution of language and how ancient languages from different geographical regions and ethnic groups have developed into what they are today and what they may become in the future.</p>
+      
+        <p>To address this problem, I believe it is essential to have a deep understanding of the history of various languages. With regard to the Chinese language, I have utilised my mastery of the Qieyun phonological system to develop the widely-used qieyun-js programming library. I also possess a deep knowledge of the history of Japanese kanji pronunciation, with the ability to read any text written in kanji using the old Japanese pronunciation of on'yomi.</p>
+        
+        <p>To attain an intuitive sense of language evolution, I have been studying a range of similar languages and dialects, incorporating the knowledge of anthropology and ethnology. For example, in addition to my proficiency in Mandarin and Cantonese, I am also familiar with the Hakka and Teochew dialects. I am also simultaneously studying the North Germanic languages of Norwegian, Danish, Swedish, Icelandic, Faroese and Old Norse.</p>
+        
+        <p>By leveraging my extensive knowledge of language evolution, I am poised to make valuable contributions to the field of historical linguistics and shape our understanding of the future of world languages.</p>
+      </section>
 
-  <p>Nevertheless, even the best NLP models today are unable to process low-resource languages, despite the fact that humans are capable of adapting to these languages through appropriate methods. My long-term objective is to find a transfer learning method that enables AI to pick up low-resource languages without human supervision, leveraging the vast amounts of data available on the Internet.</p>
+      <section id="Mathematics" class="hidden">
+        <h2>Mathematics</h2>
 
-  <!-- <h2>Articles</h2>
+        <p>Mathematics has always been a passion of mine and I have dedicated myself to exploring a wide range of areas including topology, group theory, number theory, category theory, type theory, computability theory, and probability theory.</p>
+      
+        <p>In my research, I am particularly interested in formalising mathematical theorems through theorem provers, specifically using the Lean proof assistant. I believe that this approach not only deepens our understanding of mathematical concepts but also opens up new avenues for discovery in mathematics.</p>
+        
+        <p>Unfortunately, due to limited time, I am unable to provide individual supervision at this time. However, I am always eager to collaborate with other researchers who share my passion for mathematics and welcome the opportunity to work together.</p>
+        
+        <p>If you would like to learn more about my work or discuss potential collaboration opportunities, please feel free to reach out to me. I look forward to hearing from you!</p>
+      </section>
 
-  <ol>
-    <li><a href="https://ayaka.shn.hk/btq/">Bantian Railway Station</a></li>
-    <li><a href="https://ayaka.shn.hk/shidinn/">The Shidinn Language</a></li>
-    <li><a href="https://ayaka.shn.hk/pgm/en-GB/">Thoughts on Learning the Course of Probabilistic Graphical Models</a></li>
-  </ol> -->
+      <section id="Miscellaneous" class="hidden">
+        <h2>Miscellaneous</h2>
 
-  <h2>Historical Linguistics</h2>
+        <p>Aside from my professional pursuits, I am passionate about anthropology, ethnology, mythology, typography, and astronomy. In my leisure time, I engage in a range of diverse hobbies that help me stay grounded and inspired. These include singing and plane-spotting.</p>
+        
+        <p>In my use of technology, I have made several unique choices. I use the PWBRHK keyboard layout on my mobile phone, instead of the conventional QWERTY layout. This layout, which I designed specifically with linguistics in mind, is optimised for typing Cantonese and also supports special letters used in Nordic languages.</p>
+        
+        <p>I currently reside in Singapore, but I observe the Australian Central Standard Time (ACST). This is due to my love for Australia, as well as its positive impact on my overall health and well-being.</p>
+        
+        <p>Additionally, I use my self-designed <a href="https://ayaka14732.github.io/nya-calendar/">Nya calendar</a> alongside the Gregorian calendar. The Nya calendar takes into account not only the orbit of the Earth, but also that of the Moon and Mercury, and boasts several advantageous features.</p>
+      
+        <p>As a Baroness of the Principality of Sealand, I am honoured to hold a noble title and play a crucial role in shaping its future. My role is a privilege that enables me to represent its interests, promote its sovereignty, and embody its values and principles. I am proud to stand at the forefront of this self-determined entity, paving the way for a new era of independence and self-expression.</p>    
+      </section>
 
+      <section id="Posts" class="hidden">
+        <h2>Posts</h2>
 
-  <p>As a historian of languages, I am deeply interested in exploring the evolution of language and how ancient languages from different geographical regions and ethnic groups have developed into what they are today and what they may become in the future.</p>
+        <ol>
+          <!-- <li><a href="https://ayaka.shn.hk/btq/">Bantian Railway Station</a></li> -->
+          <!-- <li><a href="https://ayaka.shn.hk/shidinn/">The Shidinn Language</a></li> -->
+          <!-- <li><a href="https://ayaka.shn.hk/pgm/en-GB/">Thoughts on Learning the Course of Probabilistic Graphical Models</a></li> -->
+          <li><a href="https://medium.com/@ayaka_45434/visualising-the-computational-graph-of-a-jax-program-e073d772e8b7">Visualising the Computational Graph of a JAX Program</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/a-simple-introduction-to-data-parallelism-in-jax-bb934a799593">A Simple Introduction To Data Parallelism In JAX</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/print-the-results-of-jit-compilation-in-jax-516dc984ceb9">Print the Results of JIT Compilation in JAX</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/connect-to-google-colab-using-ssh-bb342e0d0fd2">Connect to Google Colab Using SSH</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/installing-packages-on-linux-without-sudo-privilege-using-junest-5fe7523c9d86">Installing Packages on Linux Without sudo Privilege Using JuNest</a></li>
+        </ol>
+      </section>
+    </div>
+  </main>
 
-  <p>To address this problem, I believe it is essential to have a deep understanding of the history of various languages. With regard to the Chinese language, I have utilised my mastery of the Qieyun phonological system to develop the widely-used qieyun-js programming library. I also possess a deep knowledge of the history of Japanese kanji pronunciation, with the ability to read any text written in kanji using the old Japanese pronunciation of on'yomi.</p>
-  
-  <p>To attain an intuitive sense of language evolution, I have been studying a range of similar languages and dialects, incorporating the knowledge of anthropology and ethnology. For example, in addition to my proficiency in Mandarin and Cantonese, I am also familiar with the Hakka and Teochew dialects. I am also simultaneously studying the North Germanic languages of Norwegian, Danish, Swedish, Icelandic, Faroese and Old Norse.</p>
-  
-  <p>By leveraging my extensive knowledge of language evolution, I am poised to make valuable contributions to the field of historical linguistics and shape our understanding of the future of world languages.</p>
-
-  <h2>Mathematics</h2>
-
-  <p>Mathematics has always been a passion of mine and I have dedicated myself to exploring a wide range of areas including topology, group theory, number theory, category theory, type theory, computability theory, and probability theory.</p>
-
-  <p>In my research, I am particularly interested in formalising mathematical theorems through theorem provers, specifically using the Lean proof assistant. I believe that this approach not only deepens our understanding of mathematical concepts but also opens up new avenues for discovery in mathematics.</p>
-  
-  <p>Unfortunately, due to limited time, I am unable to provide individual supervision at this time. However, I am always eager to collaborate with other researchers who share my passion for mathematics and welcome the opportunity to work together.</p>
-  
-  <p>If you would like to learn more about my work or discuss potential collaboration opportunities, please feel free to reach out to me. I look forward to hearing from you!</p>
-
-<!-- 
-
-  <h2>Blog posts</h2>
-
-  <ul>
-    <li><a href="https://medium.com/@ayaka_45434/visualising-the-computational-graph-of-a-jax-program-e073d772e8b7">Visualising the Computational Graph of a JAX Program</a></li>
-    <li><a href="https://medium.com/@ayaka_45434/a-simple-introduction-to-data-parallelism-in-jax-bb934a799593">A Simple Introduction To Data Parallelism In JAX</a></li>
-    <li><a href="https://medium.com/@ayaka_45434/print-the-results-of-jit-compilation-in-jax-516dc984ceb9">Print the Results of JIT Compilation in JAX</a></li>
-    <li><a href="https://medium.com/@ayaka_45434/connect-to-google-colab-using-ssh-bb342e0d0fd2">Connect to Google Colab Using SSH</a></li>
-    <li><a href="https://medium.com/@ayaka_45434/installing-packages-on-linux-without-sudo-privilege-using-junest-5fe7523c9d86">Installing Packages on Linux Without sudo Privilege Using JuNest</a></li>
-  </ul> -->
-
-  <h2>Miscellaneous</h2>
-
-  <p>Aside from my professional pursuits, I am passionate about anthropology, ethnology, mythology, typography, and astronomy. In my leisure time, I engage in a range of diverse hobbies that help me stay grounded and inspired. These include singing and plane-spotting.</p>
-  
-  <p>In my use of technology, I have made several unique choices. I use the PWBRHK keyboard layout on my mobile phone, instead of the conventional QWERTY layout. This layout, which I designed specifically with linguistics in mind, is optimised for typing Cantonese and also supports special letters used in Nordic languages.</p>
-  
-  <p>I currently reside in Singapore, but I observe the Australian Central Standard Time (ACST). This is due to my love for Australia, as well as its positive impact on my overall health and well-being.</p>
-  
-  <p>Additionally, I use my self-designed <a href="https://ayaka14732.github.io/nya-calendar/">Nya calendar</a> alongside the Gregorian calendar. The Nya calendar takes into account not only the orbit of the Earth, but also that of the Moon and Mercury, and boasts several advantageous features.</p>
-
-  <p>As a Baroness of the Principality of Sealand, I am honoured to hold a noble title and play a crucial role in shaping its future. My role is a privilege that enables me to represent its interests, promote its sovereignty, and embody its values and principles. I am proud to stand at the forefront of this self-determined entity, paving the way for a new era of independence and self-expression.</p>
-
-</div>
-
-<!-- Chronological_dispersal_of_Austronesian_people_across_the_Pacific.png,https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg
-transformer.png,https://theaisummer.com/transformer/
-t1irww1mxp051.png,https://www.reddit.com/r/etymologymaps/comments/gpq9is/spread_of_the_protoindoeuropean_word_for_brother/
-IMG_5004.jpg,https://company.books-yagi.co.jp/archives/news/1285
-xhm6ihn84am11.jpg,https://www.reddit.com/r/MapPorn/comments/9fweib/map_showing_the_decline_of_native_irish_speakers/
-games-1.png,https://alconost.com/en/localization/games
-gif-maker-25.png,https://www.milestoneloc.com/translation-vs-transliteration-vs-transcreation/ -->
+  <footer>
+    <p>© 2023 Ayaka. Open-sourced on <a href="https://github.com/ayaka14732">GitHub</a>. Inspired by Dark Reader and <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of Minimal Mistakes.</p>
+  </footer>
 </body>
 </html>
