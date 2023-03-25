@@ -30,7 +30,7 @@ const loadData = async () => {
 
 const updateTime = () => {
   const date = new Date();
-  const timeZone = "Australia/Darwin";
+  const timeZone = "Australia/Brisbane";
 
   const formatter = new Intl.DateTimeFormat("sv-SE", { timeZone });
   const dateString = formatter.format(date).substring(0, 10);
