@@ -27,8 +27,9 @@
         <li onclick="handleToggle('NLP')">NLP</li>
         <li onclick="handleToggle('Linguistics')">Linguistics</li>
         <li onclick="handleToggle('Mathematics')">Mathematics</li>
+        <li onclick="handleToggle('Awards')">Awards</li>
+        <li onclick="handleToggle('Articles')">Articles</li>
         <li onclick="handleToggle('Miscellaneous')">Miscellaneous</li>
-        <li onclick="handleToggle('Posts')">Posts</li>
       </ul>
     </nav>
   </header>
@@ -42,7 +43,7 @@
           <figure>
             <img src="assets/clock.png">
             <figcaption>
-              <span id="clock" title="The Nya Calendar">0/0/0/0 00:00</span> (<span title="Australian Eastern Standard Time">AEST</span>)
+              <span id="clock" title="The Nya Calendar">0/0/0/0 00:00</span> (<span title="Singapore Time">SGT</span>)
             </figcaption>
           </figure>
         </li>
@@ -78,69 +79,81 @@
         <h2>NLP</h2>
 
         <p>I am driven by my lifelong goal of designing powerful artificial intelligence that can understand and process a diverse range of languages, both widely spoken and under-resourced. My strong background in computer science has allowed me to gain a thorough understanding of the architecture of state-of-the-art NLP models.</p>
-      
+
         <p>I have made significant contributions to NLP, including the development of TransCan, an English-Cantonese machine translation model that outperforms state-of-the-art commercial products by 11.8 BLEU. I implemented the BART model from scratch using JAX, establishing a versatile codebase for future deep learning model architecture research. Moreover, I created the LIHKG Cantonese Dataset through a scraper that bypassed all 13 layers of Cloudflare’s protection, resulting in a corpus of 172 million unique sentences.</p>
-      
-        <p>Recent advancements in NLP technology have been particularly exciting, including the release of ChatGPT, a highly advanced text generation model with strong reasoning skills. As one of the first users of ChatGPT Plus, I am thrilled to be at the forefront of this cutting-edge journey.</p>
-      
-        <p>Nevertheless, even the best NLP models today are unable to process low-resource languages, despite the fact that humans are capable of adapting to these languages through appropriate methods. My long-term objective is to find a transfer learning method that enables AI to pick up low-resource languages without human supervision, leveraging the vast amounts of data available on the Internet.</p>
+
+        <p>Recent advancements in NLP technology have been particularly exciting, including the release of ChatGPT, a highly advanced large language model with strong language understanding and reasoning abilities. Being one of the first pioneers of ChatGPT Plus, I am thrilled to be at the forefront of this cutting-edge journey. I am working on various prompt and dialogue engineering techniques, and I am fine-tuning ChatGPT-like language models such as LLaMA for various NLP tasks and applications.</p>
+
+        <p>Nevertheless, even the best NLP models today are unable to process low-resource languages, despite the fact that humans are capable of adapting to these languages through appropriate methods. My long-term objective is to seek an appropriate method that enables AI to pick up low-resource languages without human supervision.</p>
       </section>
 
       <section id="Linguistics" class="hidden">
         <h2>Linguistics</h2>
 
         <p>As a historian of languages, I am deeply interested in exploring the evolution of language and how ancient languages from different geographical regions and ethnic groups have developed into what they are today and what they may become in the future.</p>
-      
+
         <p>To address this problem, I believe it is essential to have a deep understanding of the history of various languages. With regard to the Chinese language, I have utilised my mastery of the Qieyun phonological system to develop the widely-used qieyun-js programming library. I also possess a deep knowledge of the history of Japanese kanji pronunciation, with the ability to read any text written in kanji using the old Japanese pronunciation of on'yomi.</p>
-        
-        <p>To attain an intuitive sense of language evolution, I have been studying a range of similar languages and dialects, incorporating the knowledge of anthropology and ethnology. For example, in addition to my proficiency in Mandarin and Cantonese, I am also familiar with the Hakka and Teochew dialects. I am also simultaneously studying the North Germanic languages of Norwegian, Danish, Swedish, Icelandic, Faroese and Old Norse.</p>
-        
+
+        <p>To attain an intuitive sense of language evolution, I have been researching groups of similar languages and dialects, incorporating the knowledge of anthropology and ethnology. For example, in addition to my proficiency in Mandarin and Cantonese, I am also familiar with the Hakka, Hokkien and Teochew dialects. I am simultaneously studying the North Germanic languages of Norwegian, Danish, Swedish, Icelandic, Faroese and Old Norse. Furthermore, I am delving into the study of Malay and the historical development of Austronesian languages.</p>
+
         <p>By leveraging my extensive knowledge of language evolution, I am poised to make valuable contributions to the field of historical linguistics and shape our understanding of the future of world languages.</p>
       </section>
 
       <section id="Mathematics" class="hidden">
         <h2>Mathematics</h2>
 
-        <p>Mathematics has always been a passion of mine and I have dedicated myself to exploring a wide range of areas including topology, group theory, number theory, category theory, type theory, computability theory, and probability theory.</p>
-      
+        <p>Mathematics has always been a passion of mine and I have dedicated myself to exploring a wide range of areas including group theory, number theory, category theory and type theory.</p>
+
         <p>In my research, I am particularly interested in formalising mathematical theorems through theorem provers, specifically using the Lean proof assistant. I believe that this approach not only deepens our understanding of mathematical concepts but also opens up new avenues for discovery in mathematics.</p>
-        
+
         <p>Unfortunately, due to limited time, I am unable to provide individual supervision at this time. However, I am always eager to collaborate with other researchers who share my passion for mathematics and welcome the opportunity to work together.</p>
-        
+
         <p>If you would like to learn more about my work or discuss potential collaboration opportunities, please feel free to reach out to me. I look forward to hearing from you!</p>
+      </section>
+
+      <section id="Awards" class="hidden">
+        <h2>Awards</h2>
+
+        <p>I have received numerous accolades throughout my career, but what I am most proud of are the awards I have earned in both the open-source community and my professional fields.</p>
+
+        <p>In Apr 2023, I won the Google Open Source Peer Bonus award in recognition of my significant open-source contributions to JAX.</p>
+
+        <p>In Oct 2022, I won the First Prize among 120 teams in the MLDA Deep Learning Week 2022 Hackathon.</p>
+
+        <p>In Apr 2022, I completed and passed 16 challenging PyTorch tensor puzzles created by Prof. Alexander Rush, and was certified to possess ‘extremely impressive PyTorch skills’.</p>
+
+        <p>In Aug 2019, I was granted the Special Contribution Award at the Julia CN Conference in recognition of my open-source contributions to the Julia community.</p>
+      </section>
+
+      <section id="Articles" class="hidden">
+        <h2>Articles</h2>
+
+        <ol>
+          <li><a href="https://github.com/ayaka14732/TinyPE-on-Win10">Smallest 64-Bit PE File on Windows 10</a></li>
+          <!-- <li><a href="https://medium.com/@ayaka_45434/visualising-the-computational-graph-of-a-jax-program-e073d772e8b7">Visualising the Computational Graph of a JAX Program</a></li> -->
+          <li><a href="https://medium.com/@ayaka_45434/a-simple-introduction-to-data-parallelism-in-jax-bb934a799593">A Simple Introduction To Data Parallelism In JAX</a></li>
+          <!-- <li><a href="https://medium.com/@ayaka_45434/print-the-results-of-jit-compilation-in-jax-516dc984ceb9">Print the Results of JIT Compilation in JAX</a></li> -->
+          <!-- <li><a href="https://medium.com/@ayaka_45434/connect-to-google-colab-using-ssh-bb342e0d0fd2">Connect to Google Colab Using SSH</a></li> -->
+          <!-- <li><a href="https://medium.com/@ayaka_45434/installing-packages-on-linux-without-sudo-privilege-using-junest-5fe7523c9d86">Installing Packages on Linux Without sudo Privilege Using JuNest</a></li> -->
+          <li><a href="https://arp.shn.hk/1/">The Wakong Algorithm and Its Python Implementation</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/the-death-of-traditional-search-engines-9d942764524e">The Death of Traditional Search Engines</a></li>
+          <li><a href="https://medium.com/@ayaka_45434/the-benefits-of-chatgpt-in-education-294ceec3d96f">The Benefits of ChatGPT in Education</a></li>
+          <!-- <li><a href="https://medium.com/@ayaka_45434/unleashing-the-boundlessness-of-chatgpt-a-public-appeal-f1b535a5ca05">Unleashing the Boundlessness of ChatGPT: A Public Appeal</a></li> -->
+        </ol>
       </section>
 
       <section id="Miscellaneous" class="hidden">
         <h2>Miscellaneous</h2>
 
-        <p>Aside from my professional pursuits, I am passionate about anthropology, ethnology, mythology, typography, and astronomy. In my leisure time, I engage in a range of diverse hobbies that help me stay grounded and inspired. These include singing and plane-spotting.</p>
-        
-        <p>In my use of technology, I have made several unique choices. I use the PWBRHK keyboard layout on my mobile phone, instead of the conventional QWERTY layout. This layout, which I designed specifically with linguistics in mind, is optimised for typing Cantonese and also supports special letters used in Nordic languages.</p>
-        
-        <p>I currently reside in Singapore, but I observe the Australian Eastern Standard Time (AEST). This is due to my love for Australia, as well as its positive impact on my overall health and well-being.</p>
-        
-        <p>Additionally, I use my self-designed <a href="https://ayaka14732.github.io/nya-calendar/">Nya calendar</a> alongside the Gregorian calendar. The Nya calendar takes into account not only the orbit of the Earth, but also that of the Moon and Mercury, and boasts several advantageous features.</p>
+        <p>Aside from my professional pursuits, I am passionate about anthropology, ethnology, mythology, typography, and astronomy. In my leisure time, I engage in a range of diverse hobbies that help me stay grounded and inspired. These include singing, hiking, plane-spotting and stargazing.</p>
 
-        <p>In line with my technological preferences, I have chosen to use Arch Linux as my daily desktop operating system. Arch Linux is a lightweight and highly customizable Linux distribution known for its rolling-release model, up-to-date software packages, and minimalistic approach. By maintaining only one copy of a software package, which is shared among all packages that require it, Arch Linux keeps my system uncluttered and reduces redundancy.</p>
-      
+        <p>In my use of technology, I have made several unique choices. I use the PWBRHK keyboard layout on my mobile phone, instead of the conventional QWERTY layout. This layout, which I designed specifically with linguistics in mind, is optimised for typing Cantonese and Nordic languages.</p>
+
+        <p>I use my self-designed <a href="https://ayaka14732.github.io/nya-calendar/">Nya calendar</a> alongside the Gregorian calendar. The Nya calendar takes into account not only the orbit of the Earth, but also that of the Moon and Mercury, and boasts several advantageous features.</p>
+
+        <p>Additionally, I use Arch Linux as my daily desktop operating system. As a lightweight and highly customizable Linux distribution, Arch Linux is known for its rolling-release model, up-to-date software packages, and minimalistic approach. By maintaining only one copy of a software package, which is shared among all packages that require it, Arch Linux keeps my system uncluttered and reduces redundancy.</p>
+
         <p>As a Baroness of the Principality of Sealand, I am honoured to hold a noble title and play a crucial role in shaping its future. My role is a privilege that enables me to represent its interests, promote its sovereignty, and embody its values and principles. I am proud to stand at the forefront of this self-determined entity, paving the way for a new era of independence and self-expression.</p>    
-      </section>
-
-      <section id="Posts" class="hidden">
-        <h2>Posts</h2>
-
-        <ol>
-          <li><a href="https://github.com/ayaka14732/TinyPE-on-Win10">Smallest 64-Bit PE File on Windows 10</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/visualising-the-computational-graph-of-a-jax-program-e073d772e8b7">Visualising the Computational Graph of a JAX Program</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/a-simple-introduction-to-data-parallelism-in-jax-bb934a799593">A Simple Introduction To Data Parallelism In JAX</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/print-the-results-of-jit-compilation-in-jax-516dc984ceb9">Print the Results of JIT Compilation in JAX</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/connect-to-google-colab-using-ssh-bb342e0d0fd2">Connect to Google Colab Using SSH</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/installing-packages-on-linux-without-sudo-privilege-using-junest-5fe7523c9d86">Installing Packages on Linux Without sudo Privilege Using JuNest</a></li>
-          <li><a href="https://arp.shn.hk/1/">The Wakong Algorithm and Its Python Implementation</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/the-death-of-traditional-search-engines-9d942764524e">The Death of Traditional Search Engines</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/the-benefits-of-chatgpt-in-education-294ceec3d96f">The Benefits of ChatGPT in Education</a></li>
-          <li><a href="https://medium.com/@ayaka_45434/unleashing-the-boundlessness-of-chatgpt-a-public-appeal-f1b535a5ca05">Unleashing the Boundlessness of ChatGPT: A Public Appeal</a></li>
-        </ol>
       </section>
     </div>
   </main>
